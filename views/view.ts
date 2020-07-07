@@ -27,42 +27,53 @@ class UI {
     }
 
     restoreForm(){
-    const cardBody=document.getElementById('car-form');
-    $("#car-form").empty();
-    const newForm=document.createElement('form');
-    newForm.innerHTML=`
-        <h5>Step 2. Add wheels</h5>
-    <div class="form-group">
-        <label>Wheel 1</label>
-        <div class="row justify-content-around">
-        <input type="text" id="brand1" placeholder="brand" class="form-control col-5">
-        <input type="number" step="0.1" id="diam1" placeholder="diameter" class="form-control col-5">
+    //eliminar el formulario anterior y crear uno nuevo
+    const divCard2=document.createElement('div');
+    //agregar la clase md-5 al elemento anterior
+    divCard2.classList.add('md-5');
+    const divcard1=document.getElementById('divcard1');
+    document.getElementById('app').replaceChild(divCard2, divcard1);
+    divCard2.innerHTML=`
+    <div class="card">
+        <div class="card-header">
+            <h4>CARS</h4>
         </div>
-    </div>
-    <div class="form-group">
-        <label>Wheel 2</label>
-        <div class="row  justify-content-around">
-        <input type="text" id="brand2" placeholder="brand" class="form-control col-5">
-        <input type="number" step="0.1" id="diam2" placeholder="diameter" class="form-control col-5">
+        <div class="card-body" id="cardbody">
+        <form action="" id="wheel-form">
+            <h5>Step 2. Add wheels</h5>
+            <div class="form-group">
+                <label>Wheel 1</label>
+                <div class="row justify-content-around">
+                <input type="text" id="brand1" placeholder="brand" class="form-control col-5">
+                <input type="number" step="0.1" id="diam1" placeholder="diameter" class="form-control col-5">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Wheel 2</label>
+                <div class="row  justify-content-around">
+                <input type="text" id="brand2" placeholder="brand" class="form-control col-5">
+                <input type="number" step="0.1" id="diam2" placeholder="diameter" class="form-control col-5">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Wheel 3</label>
+                <div class="row  justify-content-around">
+                <input type="text" id="brand3" placeholder="brand" class="form-control col-5">
+                <input type="number" step="0.1" id="diam3" placeholder="diameter" class="form-control col-5">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Wheel 4</label>
+                <div class="row  justify-content-around">
+                <input type="text" id="brand4" placeholder="brand" class="form-control col-5">
+                <input type="number" step="0.1" id="diam4" placeholder="diameter" class="form-control col-5">
+                </div>
+            </div>
+            <input type="submit" value="ADD WHEELS" class="btn btn-warning btn-block">
+        </form>
         </div>
-    </div>
-    <div class="form-group">
-        <label>Wheel 3</label>
-        <div class="row  justify-content-around">
-        <input type="text" id="brand3" placeholder="brand" class="form-control col-5">
-        <input type="number" step="0.1" id="diam3" placeholder="diameter" class="form-control col-5">
-        </div>
-    </div>
-    <div class="form-group">
-        <label>Wheel 4</label>
-        <div class="row  justify-content-around">
-        <input type="text" id="brand4" placeholder="brand" class="form-control col-5">
-        <input type="number" step="0.1" id="diam4" placeholder="diameter" class="form-control col-5">
-        </div>
-    </div>
-    <input type="submit" value="ADD WHEELS" class="btn btn-warning btn-block">
+    </div>    
         `;
-    cardBody.appendChild(newForm);
     }
 
 /*     showMessage(message, cssClass){

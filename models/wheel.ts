@@ -1,7 +1,17 @@
 class Wheel{
+    public diameter:number;
+    public brand:string;
 
-    constructor(brand1: string, diam1:number, brand2: string, diam2: number , brand3: string , diam3: number
-        , brand4: string, diam4: number){
+    constructor(diameter:number, brand:string){
+        this.diameter=diameter;
+        this.brand=brand;
+    }
+
+}
+
+/* class Wheel{
+
+    constructor(brand1, diam1, brand2, diam2, brand3, diam3, brand4, diam4){
         this.brand1=brand1;
         this.diam1=diam1;
         this.brand2=brand2;
@@ -11,4 +21,4 @@ class Wheel{
         this.brand4=brand4;
         this.diam4=diam4;
     }
-}
+} */

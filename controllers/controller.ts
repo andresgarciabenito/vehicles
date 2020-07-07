@@ -36,8 +36,8 @@ document.getElementById('car-form').addEventListener('submit', function(){
     
     
     //Capturar el submit del segundo form (wheels)
-    event.preventDefault();
-    document.getElementById('car-form').addEventListener('submit', function(){
+    
+    document.getElementById('wheel-form').addEventListener('submit', function(){
     const brand1=document.getElementById('brand1').value;
     const diam1=document.getElementById('diam1').value;
     const brand2=document.getElementById('brand2').value;
@@ -48,6 +48,7 @@ document.getElementById('car-form').addEventListener('submit', function(){
     const diam4=document.getElementById('diam4').value;
     
     const fourwheels= new Wheel(brand1, diam1, brand2, diam2, brand3, diam3, brand4, diam4)
+    
     const ui= new UI();
     
     //Validaciones segundo formulario (wheels)

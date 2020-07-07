@@ -28,6 +28,8 @@ document.getElementById('car-form').addEventListener('submit', function () {
     event.preventDefault();
     return;
 });
+
+
 //Capturar el submit del segundo form (wheels)
 document.getElementById('car-form').addEventListener('submit', function () {
     var brand1 = document.getElementById('brand1').value;
@@ -40,6 +42,7 @@ document.getElementById('car-form').addEventListener('submit', function () {
     var diam4 = document.getElementById('diam4').value;
     var fourwheels = new Wheel(brand1, diam1, brand2, diam2, brand3, diam3, brand4, diam4);
     var ui = new UI();
+    
     //Validaciones segundo formulario (wheels)
     if (diam1.value < 0.4 || diam1.value > 2) {
         alert("Incorrect diameter (wheel 1)");
