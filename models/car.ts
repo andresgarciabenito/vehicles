@@ -14,13 +14,3 @@ class Car{
         this.wheels.push(wheel);
     }
 }
-
-/* class Car{
-
-    constructor(plate,brand,color){
-        this.plate=plate;
-        this.brand=brand;
-        this.color=color;
-
-    }
-} */

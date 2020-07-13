@@ -10,12 +10,3 @@ var Car = /** @class */ (function () {
     };
     return Car;
 }());
-/* class Car{
-
-    constructor(plate,brand,color){
-        this.plate=plate;
-        this.brand=brand;
-        this.color=color;
-
-    }
-} */ 
