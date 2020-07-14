@@ -1,3 +1,9 @@
+//Acá enpieza el manejo del controlador
+var car: Car;
+var ui = new UI();
+addMainFormEventListener();
+
+
 function addMainFormEventListener(){
   var form = document.getElementById("main_form") as HTMLElement;
   //Capturar el submit
@@ -68,12 +74,8 @@ function addWheelEventLister(){
               
           }
       }
-      ui.addWheels(car.wheels);    
+      ui.addWheels(car);    
 
   });
 }
 
-//Acá enpieza el manejo del controlador
-var car: any;
-var ui = new UI();
-addMainFormEventListener();

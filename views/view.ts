@@ -1,7 +1,7 @@
 //Definimos una clase para interfaz (interactúa con el HTML)
 class UI {
 
-    addCar(car){
+    addCar(car: Car){
     //accedo al div 
     const carList=document.getElementById('car-details');
     const element=document.createElement('div');
@@ -90,7 +90,7 @@ class UI {
         }, 4000);
     } */
     
-    addWheels(car){
+    addWheels(car: Car){
         //accedo al div 
         const carList2=document.getElementById('car-details');
         const element2=document.createElement('div');
