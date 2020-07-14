@@ -4,7 +4,7 @@ function addMainFormEventListener(){
   form.addEventListener("submit", function (event) {
       event.preventDefault();
       event.stopPropagation();
-      var errors = 0;
+      var errors: number = 0;
       var plate: string = (document.getElementById("plate") as HTMLFormElement).value; // contingut inputs cotxe
       var brand: string = (document.getElementById("brand") as HTMLFormElement).value;
       var color: string = (document.getElementById("color") as HTMLFormElement).value;
@@ -65,14 +65,15 @@ function addWheelEventLister(){
           else {
               var wheels = new Wheel(diam, brand);
               car.addWheel(wheels);
+              
           }
       }
-      ui.addWheels(car.wheels);
+      ui.addWheels(car.wheels);    
 
   });
 }
 
 //Acá enpieza el manejo del controlador
-var car;
+var car: any;
 var ui = new UI();
 addMainFormEventListener();

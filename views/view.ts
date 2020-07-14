@@ -90,7 +90,7 @@ class UI {
         }, 4000);
     } */
     
-    addWheels(car.wheels){
+    addWheels(car){
         //accedo al div 
         const carList2=document.getElementById('car-details');
         const element2=document.createElement('div');
@@ -101,25 +101,25 @@ class UI {
             <div class="row">
             <div class="col">
               <h6>Wheel 1</h6>
-              <strong>Brand 1:</strong> ${car.wheels[0]{0}} <br>
-              <strong>Diam. 1:</strong> ${car.wheels[0]{1}} <br>
+              <strong>Brand 1:</strong> ${car.wheels[0].brand} <br>
+              <strong>Diam. 1:</strong> ${car.wheels[0].diameter} <br>
             </div>
             <div class="col">
               <h6>Wheel 2</h6>
-              <strong>Brand 2:</strong> ${car.wheels[1]{0}} <br>
-              <strong>Diam. 2:</strong> ${car.wheels[1]{1}} <br>
+              <strong>Brand 2:</strong> ${car.wheels[1].brand} <br>
+              <strong>Diam. 2:</strong> ${car.wheels[1].diameter} <br>
               
             </div>
             <div class="col">
             <h6>Wheel 3</h6>
-              <strong>Brand 3:</strong> ${car.wheels[2]{0}} <br>
-              <strong>Diam. 3:</strong> ${car.wheels[2]{1}} <br>
+              <strong>Brand 3:</strong> ${car.wheels[2].brand} <br>
+              <strong>Diam. 3:</strong> ${car.wheels[2].diameter} <br>
               
             </div>
             <div class="col">
               <h6>Wheel 4</h6>
-              <strong>Brand 4:</strong> ${car.wheels[3]{0}} <br>
-              <strong>Diam. 4:</strong> ${car.wheels[3]{1}} <br>
+              <strong>Brand 4:</strong> ${car.wheels[3].brand} <br>
+              <strong>Diam. 4:</strong> ${car.wheels[3].diameter} <br>
             </div>  
         </div>
         </div>
